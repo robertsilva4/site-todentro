@@ -4,6 +4,10 @@
     text-align: center;
 }
 
+.imge-girl {
+    position: relative;
+}
+
 .home-operation {
     background-color: #1672BB;
 }
