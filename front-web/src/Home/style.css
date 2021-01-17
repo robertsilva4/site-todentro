@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@500;800&display=swap');
+.abolt-container {
+    text-align: center;
+}
+
+.home-operation {
+    background-color: #1672BB;
+}
+
+.home-operation-session-one {
+    display: inline;
+}
+
+.home-operatio-title {
+    text-align: center;
+    font-family: Dosis;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 64px;
+    line-height: 81px;
+    color: #FFFFFF;
+}
+
+.abolt-text {
+    padding: 5%;
+    font-family: 'Dosis', sans-serif;
+    font-style: normal;
+    font-size: 36px;
+    line-height: 46px;
+    text-align: center
+}
+
+.abolt-title {
+    font-family: Dosis;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 64px;
+    line-height: 81px;
+}
