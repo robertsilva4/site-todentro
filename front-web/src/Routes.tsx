@@ -1,7 +1,6 @@
 import React from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import Cadastro from "./Cadastro";
-import Home from "./Home";
 import Login from "./Login";
 import Vagas from "./Vagas";
 
@@ -19,7 +18,7 @@ function Routes() {
                     <Vagas />
                 </Route>
                 <Route path="/">
-                    <Home />
+                    <Login />
                 </Route>
             </Switch>
         </BrowserRouter>
