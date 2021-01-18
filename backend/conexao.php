@@ -1,9 +1,9 @@
 <?php
 
 function conn(){
-    $host = "localhost";
-    $port = 3308;
-    $user = "root";
+    $host = "3.93.225.143";
+    $port = 3306;
+    $user = "admin";
     $passwd = "admin123";
     $db = "db-todentro";
 
