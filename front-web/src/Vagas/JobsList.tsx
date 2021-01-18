@@ -1,6 +1,5 @@
 import './style.css';
 
-
 function JobsList() {
     return (
         <div className="jobs-container">

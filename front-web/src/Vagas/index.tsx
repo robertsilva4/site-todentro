@@ -5,7 +5,6 @@ import { ReactComponent as Imageexclamacao } from './image-exclamacao.svg';
 import JobsList from './JobsList';
 import './style.css';
 function Vagas() {
-    // const [jobs, setJobs] = useState([]);
 
     useEffect(()=>{
         fetchVagas()
