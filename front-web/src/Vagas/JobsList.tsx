@@ -1,5 +1,4 @@
 import './style.css';
-import { Job } from './types';
 
 
 function JobsList() {
