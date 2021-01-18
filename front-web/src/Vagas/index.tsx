@@ -1,12 +1,21 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import Header from '../Header';
+import React, { useEffect} from 'react';
+import { fetchVagas } from '../api';
+import Navbar from '../Navbar';
 import { ReactComponent as Imageexclamacao } from './image-exclamacao.svg';
+import JobsList from './JobsList';
 import './style.css';
-function Login() {
+function Vagas() {
+    // const [jobs, setJobs] = useState([]);
+
+    useEffect(()=>{
+        fetchVagas()
+        .then(response=> console.log(response.data))
+        .catch(error => console.log(error))
+    })
+
     return (
         <>
-            <Header />
+            <Navbar />
             <div className="vagas-content">
                 <Imageexclamacao className="image-exclamacao" />
                 <p className="vagas-title">Encontre a Vaga Ideal</p>
@@ -15,11 +24,13 @@ function Login() {
                     <input className="input-pesquisa" value="Login" />
                     <input className="input-pesquisa" value="Senha" />
                     <input className="input-pesquisa" value="Digite uma cidade" />
-                    <Link to="/" className="pesquisa-form-button">pesquisar</Link>
+                    <button className="pesquisa-form-button">pesquisar</button>
                 </form>
+                <JobsList />
+                
             </div>
         </>
     );
 }
 
-export default Login;
+export default Vagas;

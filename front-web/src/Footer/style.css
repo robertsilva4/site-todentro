@@ -1,6 +1,22 @@
 .footer-container {
+    padding-top: 15px;
+    padding-bottom: 15px;
     background-color: #FD563A;
-    height: 199px;
+    font-weight: normal;
+    text-align: center;
+    font-size: 12px;
+    line-height: 16px;
+    height: 50px;
     left: 0px;
     top: 3327px;
+}
+
+.footer-icons {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-icons>* {
+    margin-right: 5px;
 }

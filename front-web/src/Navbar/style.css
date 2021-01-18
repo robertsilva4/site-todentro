@@ -1,0 +1,31 @@
+.navbar-container {
+    height: 115px;
+    background-color: #FDC842;
+    padding-left: 45px;
+    margin-top: 32px;
+    display: flex;
+    align-items: center;
+}
+
+.text-logo-navbar {
+    font-family: 'Dosis', sans-serif;
+    color: #FD563A;
+    margin-left: 15px;
+}
+
+.navbar-text {
+    cursor: pointer;
+    margin-left: 50%;
+    color: #1672BB;
+    font-family: Dosis;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.navbar-button {
+    margin-left: 10px;
+    padding: 10px;
+    background-color: #FFFFFFFF;
+}
