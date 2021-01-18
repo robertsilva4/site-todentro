@@ -1,14 +1,19 @@
-import React, { useEffect} from 'react';
+import React, { useEffect, useState} from 'react';
 import { fetchVagas } from '../api';
 import Navbar from '../Navbar';
 import { ReactComponent as Imageexclamacao } from './image-exclamacao.svg';
 import JobsList from './JobsList';
 import './style.css';
+import { Job } from './types';
+
+
 function Vagas() {
+
+    const [job, setJob] = useState<Job[]>([]);
 
     useEffect(()=>{
         fetchVagas()
-        .then(response=> console.log(response.data))
+        .then(response=> setJob(response.data.data))
         .catch(error => console.log(error))
     })
 
@@ -25,7 +30,9 @@ function Vagas() {
                     <input className="input-pesquisa" value="Digite uma cidade" />
                     <button className="pesquisa-form-button">pesquisar</button>
                 </form>
-                <JobsList />
+                <JobsList  
+                    Jobs = {job}
+                />
                 
             </div>
         </>
