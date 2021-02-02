@@ -1,21 +1,19 @@
-import React, { useEffect, useState} from 'react';
-import { fetchVagas } from '../api';
+import React from 'react';
 import Navbar from '../Navbar';
 import { ReactComponent as Imageexclamacao } from './image-exclamacao.svg';
 import JobsList from './JobsList';
+import IconSearchJob from './icon_search_jobs.svg';
 import './style.css';
-import { Job } from './types';
-
 
 function Vagas() {
 
-    const [job, setJob] = useState<Job[]>([]);
+    // const [job, setJob] = useState<Job[]>([]);
 
-    useEffect(()=>{
-        fetchVagas()
-        .then(response=> setJob(response.data.data))
-        .catch(error => console.log(error))
-    })
+    // useEffect(()=>{
+    //     fetchVagas()
+    //     .then(response=> setJob(response.data.data))
+    //     .catch(error => console.log(error))
+    // })
 
     return (
         <>
@@ -25,14 +23,12 @@ function Vagas() {
                 <p className="vagas-title">Encontre a Vaga Ideal</p>
 
                 <form className="form-pesquisa">
-                    <input className="input-pesquisa" value="Login" />
-                    <input className="input-pesquisa" value="Senha" />
-                    <input className="input-pesquisa" value="Digite uma cidade" />
-                    <button className="pesquisa-form-button">pesquisar</button>
+                    <input className="input-pesquisa" value="" />
+                    <input className="input-pesquisa" value="" />
+                    <input className="input-pesquisa" value="" placeholder="Digite uma Cidade" />
+                    <button className="pesquisa-form-button"><img src={IconSearchJob} alt="" width="20" /></button>
                 </form>
-                <JobsList  
-                    Jobs = {job}
-                />
+                <JobsList/>
                 
             </div>
         </>

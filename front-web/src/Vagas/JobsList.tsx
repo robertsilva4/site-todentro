@@ -1,11 +1,6 @@
 import './style.css';
-import { Job } from './types';
 
-type Props = {
-    Jobs: Job
-}
-
-function JobsList({Jobs}:Props) {
+function JobsList() {
     return (
         <div className="jobs-container">
             <table className="table-jobs">

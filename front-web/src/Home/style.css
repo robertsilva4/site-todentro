@@ -1,98 +1,157 @@
-@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@500;800&display=swap');
-.abolt-container {
-    background-color: #FFFF;
-    text-align: center;
+.header-container {
+  position: absolute;
+  width: 100%;
+  height: 115px;
+  background-color: #ffffff;
+  margin-top: 32px;
+  display: flex;
+  align-items: center;
 }
 
-.imge-girl {
-    position: relative;
+.header-logo{
+  margin-left: 350px;
+}
+.text-logo {
+  font-family: "Dosis", sans-serif;
+  color: #fd563a;
+  margin-left: 15px;
 }
 
-.home-operation {
-    background-color: #1672BB;
-}
-
-.home-operation-session-one {
-    display: inline;
+.header-button {
+  cursor: pointer;
+   margin-left: 30%;
+  padding: 4px 15px;
+  background-color: #1672bb;
+  color: #ffffff;
+  font-family: Dosis;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 46px;
 }
 
 .home-butons {
-    display: flex;
+  display: flex;
+}
+
+.home-operation-session-one {
+  display: flex;
+}
+
+
+.home-signup-container-text {
+  text-align: center;
+  margin-bottom: 9%;
 }
 
 .home-butons-type {
-    cursor: pointer;
-    background-color: #1672BB;
-    padding: 2%;
-    margin: 0 9%;
-    font-family: 'Dosis';
-    font-size: 15px;
-    line-height: 46px;
-    color: #FFFFFF;
+  cursor: pointer;
+  background-color: #1672bb;
+  font-family: "Dosis";
+  padding: 2% 4%;
+  margin: 0 3%;
+  font-size: 15px;
+  line-height: 46px;
+  color: #ffffff;
 }
 
-.home-operation-session-two {
-    display: flex;
-}
-
-.home-operatio-crie-perfil {
-    background-color: #7FBB5A;
-    text-align: center;
-    padding: 20px;
-    margin: 50px;
-}
-
-.image-fundo {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-}
-
-.image-girl {
-    position: absolute;
-}
-
-.home-signup-container {
-    background-color: #FDC842;
+.icon-exclamation {
+  margin-left: 15%;
 }
 
 .home-signup-container-iam {
-    position: relative;
-    background-color: #FDC842;
-    margin-top: 5%;
-    margin-left: 20%;
-    margin-right: 50%;
-    padding: 3%;
+  position: absolute;
+  background-color: #fdc842;
+  margin-top: 15%;
+  margin-left: 20%;
+  margin-bottom: 80%;
+  padding: 3%;
 }
 
+.home-signup-container {
+  background-color: #fdc842;
+}
+
+.BackImage {
+  position: absolute;
+  width: 100%;
+  height: 120%;
+}
+
+.imageGirl {
+  position: relative;
+  margin-top: 8%;
+  margin-left: 50%;
+}
+
+/* section two */
 .home-operatio-title {
-    text-align: center;
-    font-family: Dosis;
-    font-style: normal;
-    font-weight: 800;
-    font-size: 64px;
-    line-height: 81px;
-    color: #FFFFFF;
+  text-align: center;
+  font-family: Dosis;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 64px;
+  line-height: 81px;
+  color: #ffffff;
 }
 
-.home-signup-container-text {
-    text-align: center;
-    margin-bottom: 9%;
+.home-operation {
+  position: relative;
+  margin-top: -43px;
+  background-color: #1672bb;
 }
 
-.abolt-text {
-    padding: 5%;
-    font-family: 'Dosis', sans-serif;
-    font-style: normal;
-    font-size: 36px;
-    line-height: 46px;
-    text-align: center
+.home-operation-session-two {
+  display: flex;
+}
+
+.home-operation-steps {
+  width: 15%;
+  height: 550px;
+  background-color: #7fbb5a;
+  text-align: center;
+  padding: 30px 40px;
+  margin: 50px 100px;
+}
+
+.home-operation-steps h3 {
+  font-family: Dosis;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 63px;
+  color: #ffffff;
+}
+
+.home-operation-steps p {
+  font-family: Dosis;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 20px;
+  text-align: center;
+  color: #ffffff;
+}
+
+/* section three */
+.abolt-container {
+  background-color: #ffff;
+  text-align: center;
 }
 
 .abolt-title {
-    font-family: Dosis;
-    font-style: normal;
-    font-weight: 800;
-    font-size: 64px;
-    line-height: 81px;
+  font-family: Dosis;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 64px;
+  line-height: 81px;
+}
+
+.abolt-text {
+  padding: 5%;
+  font-family: "Dosis", sans-serif;
+  font-style: normal;
+  font-size: 36px;
+  line-height: 46px;
+  text-align: center;
 }

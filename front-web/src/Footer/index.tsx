@@ -3,7 +3,7 @@ import './style.css';
 function Footer() {
     return (
         <footer className="footer-container">
-            <p>Footer</p>
+            <p>Desenvolvido por:<br/>Robert Silva.</p>
         </footer>     
     );
 }
