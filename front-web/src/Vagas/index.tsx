@@ -1,6 +1,6 @@
 import React from 'react';
 import Navbar from '../Navbar';
-import { ReactComponent as Imageexclamacao } from './image-exclamacao.svg';
+import  Imageexclamacao from './image-exclamacao.svg';
 import JobsList from './JobsList';
 import IconSearchJob from './icon_search_jobs.svg';
 import './style.css';
@@ -19,12 +19,12 @@ function Vagas() {
         <>
             <Navbar />
             <div className="vagas-content">
-                <Imageexclamacao className="image-exclamacao" />
+                <img src={Imageexclamacao} alt="imagem atenção para proucuarar vagas" className="image-exclamacao" />
                 <p className="vagas-title">Encontre a Vaga Ideal</p>
 
                 <form className="form-pesquisa">
-                    <input className="input-pesquisa" value="" />
-                    <input className="input-pesquisa" value="" />
+                    <input className="input-pesquisa" value="" placeholder="Vagas"/>
+                    <input className="input-pesquisa" value="" placeholder="Digite um cargo ou palavra-chave "/>
                     <input className="input-pesquisa" value="" placeholder="Digite uma Cidade" />
                     <button className="pesquisa-form-button"><img src={IconSearchJob} alt="" width="20" /></button>
                 </form>

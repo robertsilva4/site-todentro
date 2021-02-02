@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { ReactComponent as Fundo } from './fundo-image.svg';
 import './style.css';
 function Cadastro() {
@@ -11,7 +12,7 @@ function Cadastro() {
                     <input className="input-cadastro" value="Login"/>
                     <input className="input-cadastro" value="E-mail"/>
                     <input className="input-cadastro" value="Senha"/>
-                    <button className="cadastro-form-button">Próximo</button>
+                    <Link to="/vagas" className="cadastro-form-button">Próximo</Link>
                 </form>
                 
             </div>

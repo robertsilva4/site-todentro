@@ -1,55 +1,59 @@
-@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@500;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@500;800&display=swap");
 .header-vagas {
-    background-color: #FDC842;
+  background-color: #fdc842;
 }
 
 .vagas-content {
-    text-align: center;
-    margin: 0 auto;
+  text-align: center;
+  margin: 0 auto;
 }
 
-.image-exclamacao {}
+.image-exclamacao {
+    margin-top: 10%;
+}
 
 .vagas-title {
-    font-style: normal;
-    font-weight: 800;
-    font-size: 36px;
-    line-height: 46px;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 46px;
+  color: #1672bb;
 }
 
 .form-pesquisa {
-    display: inline;
+  display: flex;
+  justify-content: center;
 }
 
 .input-pesquisa {
-    margin: 0 10px;
-    padding: 15px 50px;
-    border: 1px #1672BB solid;
+  margin: 0 5px;
+  padding: 15px 50px;
+  border: 1px #1672bb solid;
 }
 
 .pesquisa-form-button {
-    cursor: pointer;
-    border: 0 solid;
-    padding: 10px;
-    background-color: #FDC842;
+  cursor: pointer;
+  border: 0 solid;
+  padding: 10px;
+  background-color: #fdc842;
 }
 
 .jobs-container {
-    margin-top: 50px;
+  margin-top: 50px;
 }
 
 .table-jobs {
-    margin: 0 auto;
+  margin: 0 auto;
 }
 
 .table-jobs thead th {
-    text-align: center;
-    border: 3px blue solid;
-    padding: 10px 90px;
+  text-align: center;
+  border: 3px blue solid;
+  padding: 10px 90px;
 }
 
 .table-jobs tbody td {
-    text-align: center;
-    border: 1px blue solid;
-    padding: 10px 90px;
+  text-align: center;
+  border: 1px blue solid;
+  padding: 10px 90px;
 }
